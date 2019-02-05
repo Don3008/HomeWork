@@ -10,17 +10,18 @@ namespace Task1 //Сумма четных цифр в натуральном ч�
     {
         static void Main(string[] args)
         {
-            string naturalNumber;
+            int naturalNumber;
             Console.Write("Введите натуральное число: ");
-            naturalNumber = (Console.ReadLine());
-            int sumOfNumeral = 0;
-            foreach (char numeral in naturalNumber)
+            naturalNumber = int.Parse(Console.ReadLine());
+            int sum = 0;
+            while (naturalNumber != 0)
             {
-                int numeralToInt = (int)Char.GetNumericValue(numeral);
-                if (numeralToInt % 2 == 0)
-                    sumOfNumeral += numeralToInt;
+                int rem;
+                naturalNumber = Math.DivRem(naturalNumber, 10, out rem);
+                if (rem % 2 == 0)
+                sum += rem;
             }
-            Console.WriteLine($"Сумма четных цифр в натуральном числе равна {sumOfNumeral}");
+            Console.WriteLine(sum);
         }
     }
 }
