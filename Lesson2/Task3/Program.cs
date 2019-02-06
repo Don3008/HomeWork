@@ -10,16 +10,20 @@ namespace Task3 //Угадай число
     {
         static void Main(string[] args)
         {
-            int from = 0;
-            int to = 5;
+            int from, to;
+            string userInput;
+            Console.WriteLine("Выберете диапозон чисел, в пределах которого хотите угадывать число.");
+            Console.Write("Введите начало диапозона: ");
+            from = int.Parse(Console.ReadLine());
+            Console.Write("Введите конец диапозона: ");
+            to = int.Parse(Console.ReadLine());
             Random random = new Random();
             int randomNumber = random.Next(from, to);
             bool rightEnter = false;
             int inputNumber;
-            string userInput;
             while (true)
             {
-                Console.Write("Введите число от \"0\" до \"5\": ");
+                Console.Write($"Введите число от {from} до {to}: ");
                 userInput = Console.ReadLine();
                 rightEnter = int.TryParse(userInput, out inputNumber);
                 if (userInput == "Выход" || userInput == "выход")

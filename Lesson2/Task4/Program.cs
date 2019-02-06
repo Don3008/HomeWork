@@ -10,13 +10,13 @@ namespace Task4 //Из каких цифр состоит число
     {
         static void Main(string[] args)
         {
-            string stringNumber;
+            string number;
             Console.Write("Введите число: ");
-            stringNumber = (Console.ReadLine());
-            foreach (char stringNumeral in stringNumber)
+            number = Console.ReadLine();
+            foreach (char numeral in number)
             {
-                int numeral = (int)Char.GetNumericValue(stringNumeral);
-                Console.Write("{0},  ", numeral);
+                int num = (int)Char.GetNumericValue(numeral);
+                Console.Write("{0} ", num);
             }
             Console.WriteLine();
         }

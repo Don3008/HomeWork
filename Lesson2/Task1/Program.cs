@@ -14,14 +14,13 @@ namespace Task1 //Сумма четных цифр в натуральном ч�
             Console.Write("Введите натуральное число: ");
             naturalNumber = int.Parse(Console.ReadLine());
             int sum = 0;
-            while (naturalNumber != 0)
+            while (naturalNumber > 0)
             {
-                int rem;
-                naturalNumber = Math.DivRem(naturalNumber, 10, out rem);
-                if (rem % 2 == 0)
-                sum += rem;
+                if (naturalNumber % 10 % 2 == 0)
+                    sum += naturalNumber % 10;
+                naturalNumber /= 10;
             }
-            Console.WriteLine(sum);
+            Console.WriteLine($"Сумма четных цифр равна {sum}");
         }
     }
 }

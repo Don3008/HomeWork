@@ -25,8 +25,7 @@ namespace Task2 //Умножение чисел через сумму
                     i++;
                 }
                 if (firstMultiplier < 0 & secondMultiplier > 0 || firstMultiplier > 0 & secondMultiplier < 0)
-                    Console.WriteLine($"Произведение чисел {firstMultiplier} и {secondMultiplier} равно {composition = -composition}");
-                else
+                    composition = -composition;
                     Console.WriteLine($"Произведение чисел {firstMultiplier} и {secondMultiplier} равно {composition}");
             }
             else
