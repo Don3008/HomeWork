@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageArray", "Lesson3\Ave
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeWithAI", "Lesson3\TicTacToeWithAI\TicTacToeWithAI.csproj", "{3FBE7BAA-CC65-4003-A523-93A7C4663E30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson4", "Lesson4", "{1E544DB2-7506-42FA-AC40-973A2CB0C231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetTreeFolders", "Lesson4\GetTreeFolders\GetTreeFolders.csproj", "{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{3FBE7BAA-CC65-4003-A523-93A7C4663E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FBE7BAA-CC65-4003-A523-93A7C4663E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FBE7BAA-CC65-4003-A523-93A7C4663E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +124,7 @@ Global
 		{09F0DDD9-ED72-47F4-A492-BD8BBFE11908} = {836025FC-1D13-4439-AC10-8E84A17F1895}
 		{6E5CD7B0-3219-4A49-9FB0-F72E3A6BEEF1} = {836025FC-1D13-4439-AC10-8E84A17F1895}
 		{3FBE7BAA-CC65-4003-A523-93A7C4663E30} = {836025FC-1D13-4439-AC10-8E84A17F1895}
+		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB} = {1E544DB2-7506-42FA-AC40-973A2CB0C231}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C16E79F-7C32-4E97-A71E-82FD26553A38}
