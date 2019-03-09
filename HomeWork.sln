@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetTreeFolders2", "Lesson4\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook", "Lesson4\Notebook\Notebook.csproj", "{013C8CBC-2D54-4F7B-9B30-6EE3C44590BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook2", "Lesson4\Notebook2\Notebook2.csproj", "{8CB0482E-34CD-4A09-A282-3C73B8910C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{013C8CBC-2D54-4F7B-9B30-6EE3C44590BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{013C8CBC-2D54-4F7B-9B30-6EE3C44590BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{013C8CBC-2D54-4F7B-9B30-6EE3C44590BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB0482E-34CD-4A09-A282-3C73B8910C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB0482E-34CD-4A09-A282-3C73B8910C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB0482E-34CD-4A09-A282-3C73B8910C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB0482E-34CD-4A09-A282-3C73B8910C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +145,7 @@ Global
 		{C2CDDB95-2A4E-4B7C-8DE5-F0DCF96D72DB} = {1E544DB2-7506-42FA-AC40-973A2CB0C231}
 		{1BD01C45-32DB-42CB-B230-A2B192174672} = {1E544DB2-7506-42FA-AC40-973A2CB0C231}
 		{013C8CBC-2D54-4F7B-9B30-6EE3C44590BB} = {1E544DB2-7506-42FA-AC40-973A2CB0C231}
+		{8CB0482E-34CD-4A09-A282-3C73B8910C39} = {1E544DB2-7506-42FA-AC40-973A2CB0C231}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C16E79F-7C32-4E97-A71E-82FD26553A38}
