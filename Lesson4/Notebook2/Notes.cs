@@ -7,9 +7,9 @@ using System.IO;
 
 namespace Notebook2
 {
-    class Note
+    class Notes
     {
-        public string Name { get; private set; }
+        public string Name { get; set; }
         public DateTime CreateTime { get; private set; }
         public bool Exists { get; private set; }
         public string Path { get; private set; }
@@ -18,14 +18,14 @@ namespace Notebook2
         private FileInfo FileNote;
         private int count = 0;
 
-        public Note(string path)
+        public Notes(string path)
         {
-            Name = count.ToString();
+            //Name = count.ToString();
             Path = path + Name + ".txt";
             FileNote = new FileInfo(Path);
             Exists = FileNote.Exists;
             CreateTime = DateTime.Now;
-            count++;
+            //count++;
             //Text = ReadFile();
         }
 
@@ -44,6 +44,8 @@ namespace Notebook2
             // Проверка
             if (!Exists)
             {
+                count++;
+                name = count.ToString();
                 FileNote.Create();
                 CreateTime = DateTime.Now;
             }

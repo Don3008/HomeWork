@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8CB0482E-34CD-4A09-A282-3C73B8910C39}</ProjectGuid>
+    <ProjectGuid>{6FC8B0CE-DA47-42AA-8581-5F4BFB66E7EC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Notebook2</RootNamespace>
-    <AssemblyName>Notebook2</AssemblyName>
+    <RootNamespace>Notebook3</RootNamespace>
+    <AssemblyName>Notebook3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
