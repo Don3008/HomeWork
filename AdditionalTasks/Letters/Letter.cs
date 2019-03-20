@@ -47,7 +47,7 @@ namespace Letters
 
         public string Read()
         {
-            if (Closed == false)
+            if (!Closed)
             {
                 return textOfLetter;
             }

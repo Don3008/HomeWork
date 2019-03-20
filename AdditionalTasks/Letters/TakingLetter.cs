@@ -21,15 +21,13 @@ namespace Letters
                     Console.WriteLine(i + " - " + adr);
                     i++;
                 }
-                string name = "";
-                name = ChooseName();
+                string name = name = ChooseName();
                 Person person = new Person(name);
                 for (int j = 0; j < letters.Length; j++)
                 {
                     letters[j] = new Letter();
                     Console.WriteLine("Письмо №" + (j + 1));
-                    bool done;
-                    done = person.TakeLetter(letters[j]);
+                    bool done = person.TakeLetter(letters[j]);
                     if (done)
                     {
                         done = person.OpenLetter();

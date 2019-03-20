@@ -8,7 +8,7 @@ namespace Letters
 {
     class Person
     {
-        private bool done = false;
+        private bool isConfirmed = false;
 
         public string Name { get; private set; }
         public Letter letter { get; private set; }
@@ -22,35 +22,35 @@ namespace Letters
         {
             if (Name.Equals(letter.AddressedTo))
             {
-                this.letter = letter;
                 ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
                 bool isExit = false;
-                Console.WriteLine("Вы хотите взять письмо? Нажмите: Y - Да или N - нет");
+                Console.WriteLine("Взять письмо? Нажмите: Y - Да или N - нет");
                 while (!isExit)
                 {
                     keyInfo = Console.ReadKey(true);
                     if (keyInfo.Key == ConsoleKey.Y)
                     {
+                        this.letter = letter;
                         isExit = true;
-                        done = true;
+                        isConfirmed = true;
                     }
                     else if (keyInfo.Key == ConsoleKey.N)
                     {
                         Console.WriteLine("...");
                         isExit = true;
-                        done = false;
+                        isConfirmed = false;
                     }
                     else
                     {
                         isExit = false;
                     }
                 }
-                return done;
+                return isConfirmed;
             }
             else
             {
                 Console.WriteLine("Не тот адресат");
-                return done = false;
+                return isConfirmed = false;
             }
         }
 
@@ -58,11 +58,11 @@ namespace Letters
         {
             if (!CheckExistsLetter())
             {
-                return done;
+                return isConfirmed;
             }
             ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
             bool isExit = false;
-            Console.WriteLine("Вы хотите открыть письмо? Нажмите: Y - Да или N - нет");
+            Console.WriteLine("Открыть письмо? Нажмите: Y - Да или N - нет");
             while (!isExit)
             {
                 keyInfo = Console.ReadKey(true);
@@ -70,20 +70,20 @@ namespace Letters
                 {
                     letter.Open();
                     isExit = true;
-                    done = true;
+                    isConfirmed = true;
                 }
                 else if (keyInfo.Key == ConsoleKey.N)
                 {
                     Console.WriteLine("...");
                     isExit = true;
-                    done = false;
+                    isConfirmed = false;
                 }
                 else
                 {
                     isExit = false;
                 }
             }
-            return done;
+            return isConfirmed;
         }
 
         public void ReadLetter()
@@ -94,7 +94,7 @@ namespace Letters
             }
             ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
             bool isExit = false;
-            Console.WriteLine("Вы хотите прочитать письмо? Нажмите: Y - Да или N - нет");
+            Console.WriteLine("Прочитать письмо? Нажмите: Y - Да или N - нет");
             while (!isExit)
             {
                 keyInfo = Console.ReadKey(true);
